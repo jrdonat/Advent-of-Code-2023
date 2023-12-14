@@ -6,7 +6,8 @@ def check(block: list[str], iter: int) -> bool:
         try:
             if block[int(iter - counter)] == block[int(iter + counter)]:
                 counter += 1
-            elif iter-counter < 0: return True
+            elif iter-counter < 0: 
+                return True
             else:
                 return False
         except IndexError:
