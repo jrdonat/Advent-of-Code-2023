@@ -20,7 +20,6 @@ def getNextDirection(direction: str, panel: str) -> str:
     return panels[panel](direction)
 with open("Day 16\\input.txt","r") as file:
     input = file.read().split('\n')
-    # Compile all edge possibilities
     for i in range(len(input[0])):
         possibleStarts.append(['South',(i,-1)])
         possibleStarts.append(['North',(i,len(input))])
